@@ -1,0 +1,23 @@
+{
+  "name": "cindex",
+  "version": "1.0.0",
+  "description": "Simple content indexer for websites.",
+  "bin": {
+    "cindex": "bin/index.js"
+  },
+  "keywords": [
+    "cms",
+    "blog",
+    "static",
+    "website"
+  ],
+  "author": "Moises Soto",
+  "license": "GNU GPLv3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/musoto96/cindex.git"
+  }, 
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}
