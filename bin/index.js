@@ -3,6 +3,7 @@ const {
   init,
   generate,
   update,
+  reindex,
 } = require('../lib/main.js');
 const { 
   help,
@@ -33,23 +34,29 @@ const {
       case 'up':
         update(cmd[1]);
         break;
+      case 're':
+        reindex(cmd[1]);
+        break;
     }
   } else {
     help();
   }
 })();
-
-
+/** 
+ * TODO
+ * Make cindex.json for configuration:
+ *  Template path: page.html
+ *  Index path: page.html
+ *  Title class name.
+ *  Content class name.
+ *  Index class name.
+ * 
+ */
+/** 
+ * TODO
+ * Create default html and css.
+ */
 /**
  * TODO
- * 
- * Index pages on index.html
- * 
- * Robust regex
- * Test regex against different possible contents to 
- * ensure it is robust.
- * 
- * Actually, screw regex, split files by \n and inject/remove
- * the content that way.
- * 
+ * Create readme documentation
  */
