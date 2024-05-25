@@ -7,6 +7,8 @@ The templates only have to meet a few html class names in order to be used.
 &nbsp;\
 &nbsp;
 
+---
+
 ### Prerequisites
 1. npm and NodeJs (>=10.0.0)
 
@@ -21,6 +23,8 @@ npm install https://github.com/musoto96/cindex
 
 &nbsp;\
 &nbsp;
+
+---
 
 ### Usage
 
