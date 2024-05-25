@@ -34,29 +34,8 @@ const {
       case 'up':
         update(cmd[1]);
         break;
-      case 're':
-        reindex(cmd[1]);
-        break;
     }
   } else {
     help();
   }
 })();
-/** 
- * TODO
- * Make cindex.json for configuration:
- *  Template path: page.html
- *  Index path: page.html
- *  Title class name.
- *  Content class name.
- *  Index class name.
- * 
- */
-/** 
- * TODO
- * Create default html and css.
- */
-/**
- * TODO
- * Create readme documentation
- */
