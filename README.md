@@ -15,9 +15,9 @@ The templates only have to meet a few html class names in order to be used.
 &nbsp;
 
 ### Getting started.
-Install packages
+Install package
 ```
-npm install https://github.com/musoto96/cindex
+npm i cindex
 ```
 
 
@@ -59,11 +59,11 @@ The new page will be created under `pages` directory and it will be indexed in l
 3. Update pages\
 ```cindex up .```
 
-This command generate new pages and additionally scan for any changes in files inside the `drafts` directory (by default) and regenerate pages if needed.\
-Any pages which matching draft has been deleted will be deleted.
+This command will generate new pages and additionally scan for any changes in files inside the `drafts` directory (by default) and regenerate pages if needed.\
+Any pages whose matching draft has been deleted, will be deleted and removed from index.
 
 Any page manually added to the `pages` directory will not be deleted by the update command.\
-`cindex` will check for class `cindex-gen` on the head tag of a page to recognize if a page should be deleted when it does not have a matching draft or not.
+`cindex` will check for class `cindex-gen` on the head tag of a page to recognize if a page should be deleted when it does not have a matching draft.
 
 &nbsp;\
 &nbsp;
