@@ -72,14 +72,19 @@ Any page manually added to the `pages` directory will not be deleted by the upda
 
 ### Creating new content
 
-* For every new page that is to be created it must contain one element with class:\
+* For every new page that is to be created, the draft must contain one element with class:\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`page-title` &nbsp; This class will be used to create a link in the index, as well as for the page title.
 
-* You can add/remove and modify any element in the default template, or create your own. The template must contain the following class:\
+* You can add, remove and modify any element in the default template, or create your own. The template must contain the following class:\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`page-content` &nbsp; This class will be used to create a link in the index, as well as for the page title.
 
 * You can add/remove and modify any element in the index page, or create your own. The index must contain the following class:\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`pages-index` &nbsp; This class will be used to create and update the content index.
+
+&nbsp;\
+**Note 1**: You can append additional classes to the tags with *cindex classes* above.
+&nbsp;\
+**Note 2**: You can delete all content from the sample/default files as long as you use the same directory structure, and *cindex classes* above.
 
 &nbsp;\
 &nbsp;

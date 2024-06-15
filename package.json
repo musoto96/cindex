@@ -1,6 +1,6 @@
 {
   "name": "@musoto96/cindex",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple content indexer for websites.",
   "bin": {
     "cindex": "bin/index.js"
@@ -9,7 +9,11 @@
     "cms",
     "blog",
     "static",
-    "website"
+    "website",
+    "template-engine",
+    "generator",
+    "static",
+    "indexer"
   ],
   "author": "Moises Soto",
   "license": "GNU GPLv3",
