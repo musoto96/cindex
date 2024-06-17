@@ -1,6 +1,6 @@
 {
-  "name": "@musoto96/cindex",
-  "version": "1.0.2",
+  "name": "cindex",
+  "version": "1.0.1",
   "description": "Simple content indexer for websites.",
   "bin": {
     "cindex": "bin/index.js"

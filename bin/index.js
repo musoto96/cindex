@@ -3,7 +3,7 @@ const {
   init,
   generate,
   update,
-  reindex,
+  regenerate,
 } = require('../lib/main.js');
 const { 
   help,
@@ -33,6 +33,9 @@ const {
         break;
       case 'up':
         update(cmd[1]);
+        break;
+      case 're':
+        regenerate(cmd[1]);
         break;
     }
   } else {

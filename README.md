@@ -65,6 +65,11 @@ Any pages whose matching draft has been deleted, will be deleted and removed fro
 Any page manually added to the `pages` directory will not be deleted by the update command.\
 `cindex` will check for class `cindex-gen` on the head tag of a page to recognize if a page should be deleted when it does not have a matching draft.
 
+4. Regenerate index\
+```cindex re .```
+
+This command will regenerate the pages index in case it gets messed up.
+
 &nbsp;\
 &nbsp;
 
@@ -72,14 +77,17 @@ Any page manually added to the `pages` directory will not be deleted by the upda
 
 ### Creating new content
 
-* For every new page that is to be created, the draft must contain one element with class:\
+* **In a new draft**: For every new page that is to be created, the draft must contain a tag with class:\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`page-title` &nbsp; This class will be used to create a link in the index, as well as for the page title.
 
-* You can add, remove and modify any element in the default template, or create your own. The template must contain the following class:\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`page-content` &nbsp; This class will be used to create a link in the index, as well as for the page title.
+* **In a tempmlate**: You can add, remove and modify any element in the default template, or create your own. The template must contain a tag with the following class:\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`page-content` &nbsp; This class will be used to inject your draft's contents.
 
-* You can add/remove and modify any element in the index page, or create your own. The index must contain the following class:\
+* **In an index.html file**: You can add/remove and modify any element in the index page, or create your own. The index must contain a tag with the following class:\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`pages-index` &nbsp; This class will be used to create and update the content index.
+
+* **In _index.html file**: A tag with the following class:\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`cindex-index` &nbsp; This class will be used by the reindex function.
 
 &nbsp;\
 **Note 1**: You can append additional classes to the tags with *cindex classes* above.
