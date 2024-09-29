@@ -1,5 +1,5 @@
 {
-  "name": "cindex",
+  "name": "@musoto96/cindex",
   "version": "2.0.0",
   "description": "Simple content indexer for websites.",
   "bin": {
