@@ -1,7 +1,7 @@
 # cindex
 
 ### Description
-The cindex (content indexer) package is a simple CLI (command line interface) tool used to quickly create web pages based on `html` templates.\
+The cindex (content indexer) package is a simple CLI (command line interface) tool used to quickly create web pages based on `html` templates.
 The templates only have to meet a few html class names in order to be used. 
 
 &nbsp;\
@@ -38,16 +38,19 @@ By default the following directories are created:
 │   index.html
 │   style.css
 │
+├───categories
 ├───drafts
 │       sample.html
-│       
+│
 ├───index
 │       _index.html
+│       _tags.html
+│       _tags.json
 │
 ├───pages
-│
 └───template
         page.html
+        sample_template.html
 ```
 
 2. Generate pages\
@@ -79,12 +82,14 @@ This command will regenerate the pages index in case it gets messed up.
 
 * **In a new draft**: For every new page that is to be created, the draft must contain a tag with class:\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`page-title` &nbsp; This class will be used to create a link in the index, as well as for the page title.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`cindex-tags` &nbsp; This class will be used to create an index of categories based on the tags provided, you can provide multiple comma separated values.
 
-* **In a tempmlate**: You can add, remove and modify any element in the default template, or create your own. The template must contain a tag with the following class:\
+* **In a template**: You can add, remove and modify any element in the default template, or create your own. The template must contain a tag with the following class:\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`page-content` &nbsp; This class will be used to inject your draft's contents.
 
 * **In an index.html file**: You can add/remove and modify any element in the index page, or create your own. The index must contain a tag with the following class:\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`pages-index` &nbsp; This class will be used to create and update the content index.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`tag-index` &nbsp; This class will be used to create and update the index of categories.
 
 * **In _index.html file**: A tag with the following class:\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`cindex-index` &nbsp; This class will be used by the reindex function.
