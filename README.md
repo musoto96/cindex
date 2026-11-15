@@ -44,7 +44,7 @@ By default the following directories are created:
 │
 ├───index
 │       _index.html
-│       _tags.html
+│       _categories.html
 │       _tags.json
 │
 ├───pages
